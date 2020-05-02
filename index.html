@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf35b084d0.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+
+</head>
+<body>
+    <section class="main-container" id="sign-up-container">
+      <div class="gray-container">
+        <div class="content-box">
+          <div class="options">
+            <button class="sign-up-selector" onclick="showSignUp()">
+              Sign Up
+            </button>
+            <button class="log-in-selector" onclick="showLogIn()">
+              Log In
+            </button>
+          </div>
+          <h1>Sign Up for Free</h1>
+          <form class="form" id="sign-up-form">
+            <input class="inputs" id="first-name-input" type="text" placeholder="First Name*">
+            <input class="inputs" id="last-name-input" type="text" placeholder="Last Name*">
+            <input class="email-input inputs" type="email" placeholder="Email Address*">
+            <div class="pass-div">
+              <input class="password-input inputs" id="pass-input" type="password" placeholder="Set A Password*">
+              <i class="far fa-eye" onclick="showHidePass()"></i>
+            </div>
+            <input class="get-started-button" type="button" value="GET STARTED" onclick="checkInputs()">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="main-container" id="log-in-container">
+      <div class="gray-container">
+        <div class="content-box">
+          <div class="options">
+            <button class="sign-up-selector" onclick="showSignUp()">
+              Sign Up
+            </button>
+            <button class="log-in-selector" onclick="showLogIn()">
+              Log In
+            </button>
+          </div>
+          <h1>Welcome Back!</h1>
+          <form class="form" id="log-in-form">
+            <input class="email-input inputs2" type="email" placeholder="Email Address*">
+            <div class="pass-div">
+              <input class="password-input inputs2" id="pass-input2" type="password" placeholder="Password*">
+              <i class="far fa-eye" onclick="showHidePass2()"></i>
+            </div>
+            <p id="pass-question">Forgot Password?</p>
+            <input class="log-in-button" type="button" value="LOG IN" onclick="checkInputs2()">
+          </form>
+          
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
